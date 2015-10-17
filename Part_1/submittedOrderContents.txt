@@ -1,0 +1,23 @@
+Customer Information : 
+Name : Steave
+eMail : steave@gmail.com
+Address 1 : Unit 100, 
+Address 2 : 345 King St.
+City : Kitchener
+Province : Ontario
+Postal Code : N2P 3M4
+Phone Number : 123-456-7890
+Order Information : 
+Selected Pizza : BBQ Chicken Pizza
+Pizza Size : X-Large
+Crust Type : Stuffed
+Toppings : 4 Topping(s) selected
+Roma Tomatoes, Pineapple, Bacon Crumble, BBQ Sauce
+Order Price : 
+Pizza Size Price : $ 20
+Crust cost : $ 2
+Topping cost : $ 1.5
+Sub total : $ 23.5
+Tax Rate(Ontario) : 13%
+Tax : $ 3.055
+Total Price : $ 26.56
