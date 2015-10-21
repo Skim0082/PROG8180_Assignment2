@@ -55,7 +55,7 @@ $(document).ready(function(){
         $('#image_list img')[aryIdx[i]].alt = "Image " + (aryImg[i%(imgAryLength/2)] + 1).toString();
     }
 
-    $captionNode.html("Selected Image");
+    $captionNode.html("Are you Ready?");
     $imageNode.attr('src', "img/white.JPG");	
     $imageNode.attr('alt', "white");
 
@@ -87,7 +87,9 @@ $(document).ready(function(){
                         flipCount = 0;
 
                         if(++matchCount == 8){
-                            $captionNode.html("Conguratulation!!!");
+                            $captionNode.html("Congratulation!!!");
+							$imageNode.attr('src', "img/winner.JPG");	
+							$imageNode.attr('alt', "win");							
                         }
                     }else{
                         setTimeout(flipImage, 300);     
@@ -113,11 +115,13 @@ $(document).ready(function(){
         flipCount = 0;
     }
     
+	//After 2seconds hide the all images with changing blank image
     function changeBlankImg(){
 
         for(var i = 0; i < imgAryLength ; i++){
             $('#image_list img')[i].src = "img/blank.JPG";
             $('#image_list img')[i].alt = "Image Blank";
+			$captionNode.html("Let's Start!");
         }          
     }
 
