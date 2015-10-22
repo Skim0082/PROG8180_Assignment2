@@ -3,18 +3,14 @@
         <div class="top-title">
             Welcome to Conestoga Pizzeria!
         </div>
-        <img alt="logo" src="/img/pizza01.png" />
+        <img alt="logo" src="img/pizza01.png" />
         <div class="under-line"></div>
         <div class=" body-home">
+
             <!--
 			<form class="form-horizontal" id="myForm" name="myForm" onsubmit="return validateForm()" action="submit.php" method="post">
 			-->
-			<?= $this->Form->create($order, [
-				'name'=>'myForm',
-				'id'=>'myForm',
-				'class'=>"form-horizontal",
-				'onsubmit'=>'return validateForm()'			
-			]); ?>
+			<?= $this->Form->create($order); ?>
                 <div class="col-sm-6">
 
                     <h2>Customer Information</h2>
@@ -292,164 +288,143 @@
                         <label class="col-sm-3 control-label">Toppings</label>
                         <div class="radio-inline col-sm-9">
 							<!--
-                            <input type="checkbox" id="inlineCheckbox1" name="toppinglist" value="Veggies"> Veggies
-                            <input type="checkbox" id="inlineCheckbox2" name="toppinglist" value="Roma Tomatoes"> Roma Tomatoes
-                            <input type="checkbox" id="inlineCheckbox3" name="toppinglist" value="Red Onions"> Red Onions
-                            <input type="checkbox" id="inlineCheckbox4" name="toppinglist" value="Spinach"> Spinach
-                            <input type="checkbox" id="inlineCheckbox5" name="toppinglist" value="Pineapple"> Pineapple
-                            <input type="checkbox" id="inlineCheckbox6" name="toppinglist" value="Brocooli"> Brocooli
-                            <input type="checkbox" id="inlineCheckbox7" name="toppinglist" value="Meats"> Meats
-                            <input type="checkbox" id="inlineCheckbox8" name="toppinglist" value="Anchovies"> Anchovies
-                            <input type="checkbox" id="inlineCheckbox9" name="toppinglist" value="Bacon Crumble"> Bacon Crumble
-                            <input type="checkbox" id="inlineCheckbox10" name="toppinglist" value="Chicken"> Chicken
-                            <input type="checkbox" id="inlineCheckbox11" name="toppinglist" value="Feta Cheese"> Feta Cheese
-                            <input type="checkbox" id="inlineCheckbox12" name="toppinglist" value="Mozzarella"> Mozzarella
-                            <input type="checkbox" id="inlineCheckbox13" name="toppinglist" value="Hot Sauce"> Hot Sauce
-                            <input type="checkbox" id="inlineCheckbox14" name="toppinglist" value="BBQ Sauce"> BBQ Sauce
-                            <input type="checkbox" id="inlineCheckbox15" name="toppinglist" value="Tomato Sauce"> Tomato Sauce
-                            <input type="checkbox" id="inlineCheckbox16" name="toppinglist" value="Chill Sauce"> Chill Sauce
+                            <input type="checkbox" id="inlineCheckbox1" name="toppinglist[]" value="Veggies"> Veggies
+                            <input type="checkbox" id="inlineCheckbox2" name="toppinglist[]" value="Roma Tomatoes"> Roma Tomatoes
+                            <input type="checkbox" id="inlineCheckbox3" name="toppinglist[]" value="Red Onions"> Red Onions
+                            <input type="checkbox" id="inlineCheckbox4" name="toppinglist[]" value="Spinach"> Spinach
+                            <input type="checkbox" id="inlineCheckbox5" name="toppinglist[]" value="Pineapple"> Pineapple
+                            <input type="checkbox" id="inlineCheckbox6" name="toppinglist[]" value="Brocooli"> Brocooli
+                            <input type="checkbox" id="inlineCheckbox7" name="toppinglist[]" value="Meats"> Meats
+                            <input type="checkbox" id="inlineCheckbox8" name="toppinglist[]" value="Anchovies"> Anchovies
+                            <input type="checkbox" id="inlineCheckbox9" name="toppinglist[]" value="Bacon Crumble"> Bacon Crumble
+                            <input type="checkbox" id="inlineCheckbox10" name="toppinglist[]" value="Chicken"> Chicken
+                            <input type="checkbox" id="inlineCheckbox11" name="toppinglist[]" value="Feta Cheese"> Feta Cheese
+                            <input type="checkbox" id="inlineCheckbox12" name="toppinglist[]" value="Mozzarella"> Mozzarella
+                            <input type="checkbox" id="inlineCheckbox13" name="toppinglist[]" value="Hot Sauce"> Hot Sauce
+                            <input type="checkbox" id="inlineCheckbox14" name="toppinglist[]" value="BBQ Sauce"> BBQ Sauce
+                            <input type="checkbox" id="inlineCheckbox15" name="toppinglist[]" value="Tomato Sauce"> Tomato Sauce
+                            <input type="checkbox" id="inlineCheckbox16" name="toppinglist[]" value="Chill Sauce"> Chill Sauce
 							-->					
 						<?php
 							echo $this->Form->checkbox('toppinglist', [
 								'hiddenField' => false,
 								'id'=>'inlineCheckbox1',
-								'value'=>'Veggies',
-								'multiple'=>'checkbox'
+								'value'=>'Veggies'
 							]);
 						?> Veggies
 						<?php
-							echo $this->Form->checkbox('toppinglist', [
+							echo $this->Form->checkbox('toppinglist[]', [
 								'hiddenField' => false,
 								'id'=>'inlineCheckbox2',
-								'value'=>'Roma Tomatoes',
-								'multiple'=>'checkbox'						
+								'value'=>'Roma Tomatoes'						
 							]);
 						?> Roma Tomatoes
 						<?php
-							echo $this->Form->checkbox('toppinglist', [
+							echo $this->Form->checkbox('toppinglist[]', [
 								'hiddenField' => false,
 								'id'=>'inlineCheckbox3',
-								'value'=>'Red Onions',
-								'multiple'=>'checkbox'						
+								'value'=>'Red Onions'						
 							]);
 						?> Red Onions
 						<?php
-							echo $this->Form->checkbox('toppinglist', [
+							echo $this->Form->checkbox('toppinglist[]', [
 								'hiddenField' => false,
 								'id'=>'inlineCheckbox4',
-								'value'=>'Spinach',
-								'multiple'=>'checkbox'						
+								'value'=>'Spinach'						
 							]);
 						?> Spinach
 						<?php
-							echo $this->Form->checkbox('toppinglist', [
+							echo $this->Form->checkbox('toppinglist[]', [
 								'hiddenField' => false,
 								'id'=>'inlineCheckbox5',
-								'value'=>'Pineapple',
-								'multiple'=>'checkbox'						
+								'value'=>'Pineapple'						
 							]);
 						?> Pineapple
 						<?php
-							echo $this->Form->checkbox('toppinglist', [
+							echo $this->Form->checkbox('toppinglist[]', [
 								'hiddenField' => false,
 								'id'=>'inlineCheckbox6',
-								'value'=>'Brocooli',
-								'multiple'=>'checkbox'						
+								'value'=>'Brocooli'						
 							]);
 						?> Brocooli
 						<?php
-							echo $this->Form->checkbox('toppinglist', [
+							echo $this->Form->checkbox('toppinglist[]', [
 								'hiddenField' => false,
 								'id'=>'inlineCheckbox7',
-								'value'=>'Meats',
-								'multiple'=>'checkbox'						
+								'value'=>'Meats'						
 							]);
 						?> Meats
 						<?php
-							echo $this->Form->checkbox('toppinglist', [
+							echo $this->Form->checkbox('toppinglist[]', [
 								'hiddenField' => false,
 								'id'=>'inlineCheckbox8',
-								'value'=>'Anchovies',
-								'multiple'=>'checkbox'						
+								'value'=>'Anchovies'						
 							]);
 						?> Anchovies
 						<?php
-							echo $this->Form->checkbox('toppinglist', [
+							echo $this->Form->checkbox('toppinglist[]', [
 								'hiddenField' => false,
 								'id'=>'inlineCheckbox9',
-								'value'=>'Bacon Crumble',
-								'multiple'=>'checkbox'						
+								'value'=>'Bacon Crumble'						
 							]);
 						?> Bacon Crumble
 						<?php
-							echo $this->Form->checkbox('toppinglist', [
+							echo $this->Form->checkbox('toppinglist[]', [
 								'hiddenField' => false,
 								'id'=>'inlineCheckbox10',
-								'value'=>'Chicken',
-								'multiple'=>'checkbox'					
+								'value'=>'Chicken'						
 							]);
 						?> Chicken
 						<?php
-							echo $this->Form->checkbox('toppinglist', [
+							echo $this->Form->checkbox('toppinglist[]', [
 								'hiddenField' => false,
 								'id'=>'inlineCheckbox11',
-								'value'=>'Feta Cheese',
-								'multiple'=>'checkbox'						
+								'value'=>'Feta Cheese'						
 							]);
 						?> Feta Cheese
 						<?php
-							echo $this->Form->checkbox('toppinglist', [
+							echo $this->Form->checkbox('toppinglist[]', [
 								'hiddenField' => false,
 								'id'=>'inlineCheckbox12',
-								'value'=>'Mozzarella',
-								'multiple'=>'checkbox'						
+								'value'=>'Mozzarella'						
 							]);
 						?> Mozzarella
 						<?php
-							echo $this->Form->checkbox('toppinglist', [
+							echo $this->Form->checkbox('toppinglist[]', [
 								'hiddenField' => false,
 								'id'=>'inlineCheckbox13',
-								'value'=>'Hot Sauce',
-								'multiple'=>'checkbox'						
+								'value'=>'Hot Sauce'						
 							]);
 						?> Hot Sauce
 						<?php
-							echo $this->Form->checkbox('toppinglist', [
+							echo $this->Form->checkbox('toppinglist[]', [
 								'hiddenField' => false,
 								'id'=>'inlineCheckbox14',
-								'value'=>'BBQ Sauce',
-								'multiple'=>'checkbox'						
+								'value'=>'BBQ Sauce'						
 							]);
 						?> BBQ Sauce
 						<?php
-							echo $this->Form->checkbox('toppinglist', [
+							echo $this->Form->checkbox('toppinglist[]', [
 								'hiddenField' => false,
 								'id'=>'inlineCheckbox15',
-								'value'=>'Tomato Sauce',
-								'multiple'=>'checkbox'						
+								'value'=>'Tomato Sauce'						
 							]);
 						?> Tomato Sauce
 						<?php
-							echo $this->Form->checkbox('toppinglist', [
+							echo $this->Form->checkbox('toppinglist[]', [
 								'hiddenField' => false,
 								'id'=>'inlineCheckbox16',
-								'value'=>'Chill Sauce',
-								'multiple'=>'checkbox'						
+								'value'=>'Chill Sauce'						
 							]);
-						?> Chill Sauce	
-						<div style="display:none;">
-							<input id="chkvalue" type="hidden" name="toppinglist" value=""/>
-						</div>
+						?> Chill Sauce						
                         </div>
                     </div>					
                 </div>
 
                 <div class="form-group" id="controls">
                     <div class="col-sm-offset-2 col-sm-9">
-                        <!--
-						<input type="submit" id="button" name="submit" class="btn btn-primary" value="Order">
-                        <input type="reset" id="reset" class="btn btn-info" value="Reset">
-						-->						
+                        <!--<input type="submit" id="button" name="submit" class="btn btn-primary" value="Order">
+                        <input type="reset" id="reset" class="btn btn-info" value="Reset">-->						
 						<?php
 							echo $this->Form->button('Order', 
 							[
@@ -467,10 +442,12 @@
 								'id'=>'reset'
 							]);
 						?>	
+
+
                     </div>
                 </div>
-			<?= $this->Form->end() ?>
-            <!--</form>-->
+			<?= $this->Form->end() ?>						
+            <!---/form>-->
         </div>
         <div class="BottomLine"></div>
         <div class="bottom-title">
@@ -478,13 +455,13 @@
             <div class="col-sm-3">
                 <ul id="menulist">
                     <li class="menuitem">
-                        <a href="http://www.conestogac.on.ca/"><img src="/img/facebook.png" alt="Facebook"></a>
+                        <a href="http://www.conestogac.on.ca/"><img src="img/facebook.png" alt="Facebook"></a>
                     </li>
                     <li class="menuitem">
-                        <a href="http://www.conestogac.on.ca/"><img src="/img/twitter.png" alt="Twitter"></a>
+                        <a href="http://www.conestogac.on.ca/"><img src="img/twitter.png" alt="Twitter"></a>
                     </li>
                     <li class="menuitem">
-                        <a href="http://www.conestogac.on.ca/"><img src="/img/youtube.png" alt="You Tube"></a>
+                        <a href="http://www.conestogac.on.ca/"><img src="img/youtube.png" alt="You Tube"></a>
                     </li>
                 </ul>
             </div>

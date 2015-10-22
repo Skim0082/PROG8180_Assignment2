@@ -21,12 +21,15 @@ $cakeDescription = 'Assignment 1 - Conestoga Pizzeria';
     <?= $this->Html->charset() ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <script type="text/JavaScript" src="js/script.js"></script>	
+    <!--<link rel="stylesheet" type="text/css" href="css/style.css" />-->
+    <!--<script type="text/JavaScript" src="js/script.js"></script>-->
     <title>
         <?= $cakeDescription ?>:
         <?= $this->fetch('title') ?>
     </title>
+
+    <?= $this->Html->css('style.css') ?>
+    <?= $this->Html->script('script.js') ?>
 
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>

@@ -22,6 +22,15 @@ class OrdersController extends AppController
         $this->set('_serialize', ['orders']);
     }
 
+	 public function result($id = null)
+    {
+        $order = $this->Orders->get($id, [
+            'contain' => []
+        ]);
+        $this->set('order', $order);
+        $this->set('_serialize', ['order']);
+    }
+	
     /**
      * View method
      *
@@ -47,16 +56,30 @@ class OrdersController extends AppController
     {
         $order = $this->Orders->newEntity();
         if ($this->request->is('post')) {
-            $order = $this->Orders->patchEntity($order, $this->request->data);
+            $order = $this->Orders->patchEntity($order, $this->request->data);		
+			
+			/* Just for test
+			print $order['phonenumber'];
+			if(!empty($order['toppinglist'])){
+				print $order['toppinglist'];
+			}
+			*/			
+			// Added this line for Authorizaton
+			$order->user_id = $this->Auth->user('id');
+			// You could also do the following
+			//$newData = ['user_id' => $this->Auth->user('id')];
+			//$order = $this->Orders->patchEntity($order, $newData);			
+			
             if ($this->Orders->save($order)) {
-                $this->Flash->success(__('The order has been saved.'));
-                return $this->redirect(['action' => 'index']);
+                $this->Flash->success(__('The order has been saved successfully.'));
+				
+                return $this->redirect(['action' => 'result', $order->id]);
             } else {
                 $this->Flash->error(__('The order could not be saved. Please, try again.'));
-            }
+            }			
         }
         $this->set(compact('order'));
-        $this->set('_serialize', ['order']);
+        $this->set('_serialize', ['order']);		
     }
 
     /**
@@ -102,4 +125,23 @@ class OrdersController extends AppController
         }
         return $this->redirect(['action' => 'index']);
     }
+
+	public function isAuthorized($user)
+	{
+		// All registered users can add Orders
+		if ($this->request->action === 'add') {
+			return true;
+		}
+
+		// The owner of an Orders can edit and delete it
+		if (in_array($this->request->action, ['edit', 'delete'])) {
+			$orderId = (int)$this->request->params['pass'][0];
+			if ($this->Orders->isOwnedBy($orderId, $user['id'])) {
+				return true;
+			}
+		}
+
+		return parent::isAuthorized($user);
+	}
+	
 }
