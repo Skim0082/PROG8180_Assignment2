@@ -65,24 +65,12 @@ class OrdersTable extends Table
             ->notEmpty('city');
 
         $validator
-            ->requirePresence('province', 'create')
-            ->notEmpty('province');
-
-        $validator
             ->requirePresence('postalcode', 'create')
             ->notEmpty('postalcode');
 
         $validator
             ->requirePresence('phonenumber', 'create')
             ->notEmpty('phonenumber');
-
-        $validator
-            ->requirePresence('selectpizza', 'create')
-            ->notEmpty('selectpizza');
-
-        $validator
-            ->requirePresence('pizzasize', 'create')
-            ->notEmpty('pizzasize');
 
         $validator
             ->requirePresence('crusttype', 'create')
@@ -103,4 +91,10 @@ class OrdersTable extends Table
         $rules->add($rules->isUnique(['email']));
         return $rules;
     }
+	
+	public function isOwnedBy($orderId, $userId)
+	{
+		return $this->exists(['id' => $orderId, 'user_id' => $userId]);
+	}
+	
 }
