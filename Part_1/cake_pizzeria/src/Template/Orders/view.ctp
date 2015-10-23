@@ -1,10 +1,16 @@
-    <div id="container">
+    <div id="container" class="bodyblock">
         <div class="darkRedLine"></div>
         <div class="result-title">
-            Order View : # <?= h($order->id) ?>
+            Order View : # <?= h($order->id) ?> ( Status : <?= h($order->status) ?> )
         </div>
         <div class="under-line"></div>
         <div class="body-home">
+		
+			<ul class="horizontal">
+				<li><?= $this->Html->link('Log Out', ['controller' => 'Users', 'action' => 'logout']) ?></li>			
+				<li><?= $this->Html->link('Order List', ['controller' => 'Orders', 'action' => 'index']) ?></li>
+			</ul>
+			
             <h2>Detail View of Order</h2>
             <h3 class='h3-title'>Customer Information</h3>
 			<ul>
@@ -114,6 +120,7 @@
 			</ul>
             <h3 class='h3-total'>Total Price : $ <?=round($totalPrice, 2) ?></h3>
 		</div>
+		<!--
         <div class="BottomLine"></div>
         <div class="bottom-title">
             <div class="col-sm-9 bottom-left">Conestoga Pizzeria &copy; 2015 / Web Technologies</div>
@@ -131,4 +138,5 @@
                 </ul>
             </div>
         </div>
+		-->
     </div>

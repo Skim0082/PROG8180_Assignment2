@@ -193,3 +193,14 @@ div.message.hidden {
     font-style: italic;
     color: rgba(0, 0, 0, 0.54);
 }
+.bodyblock {
+	width:100%;
+	margin:0;
+    overflow: hidden;
+    min-height: 92%; /* full height almost always */
+}
+ul.horizontal li{
+display:block;
+float:right;
+padding:0 10px;
+}

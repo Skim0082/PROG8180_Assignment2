@@ -1,11 +1,16 @@
-    <div id="container">
+    <div id="container" class="bodyblock">
         <div class="darkRedLine"></div>
         <div class="top-title">
             Welcome to Conestoga Pizzeria!
         </div>
-        <img alt="logo" src="/img/pizza01.png" />
+        <img alt="logo" src="/pizzeria/img/pizza01.png" />
         <div class="under-line"></div>
         <div class=" body-home">
+		
+			<ul class="horizontal">
+				<li><?= $this->Html->link('Log In', ['controller' => 'Users', 'action' => 'login']) ?></li>	
+				<li> </li>
+			</ul>		
             <!--
 			<form class="form-horizontal" id="myForm" name="myForm" onsubmit="return validateForm()" action="submit.php" method="post">
 			-->
@@ -471,6 +476,7 @@
 			<?= $this->Form->end() ?>
             <!--</form>-->
         </div>
+		<!--
         <div class="BottomLine"></div>
         <div class="bottom-title">
             <div class="col-sm-9 bottom-left">Conestoga Pizzeria &copy; 2015 / Web Technologies</div>
@@ -488,4 +494,5 @@
                 </ul>
             </div>
         </div>
+		-->
     </div>
