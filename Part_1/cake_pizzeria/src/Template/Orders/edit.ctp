@@ -5,6 +5,12 @@
         </div>
         <div class="under-line"></div>
         <div class=" body-home">
+		
+			<ul class="horizontal">
+				<li><?= $this->Html->link('Log Out', ['controller' => 'Users', 'action' => 'logout']) ?></li>
+				<li><?= $this->Html->link('Order List', ['controller' => 'Orders', 'action' => 'index']) ?></li>				
+			</ul>		
+		
 			<?= $this->Form->create($order, [
 				'name'=>'myForm',
 				'id'=>'orderForm',
@@ -380,8 +386,28 @@
 							<input id="chkvalue" type="hidden" name="toppinglist" value=""/>
 						</div>
                         </div>
-                    </div>					
+                    </div>	
+					
+					<div class="form-group">
+						<label for="status" class="col-sm-3 control-label">Status</label>
+						<div class="col-sm-9">
+							<?php
+								echo $this->Form->select(
+									'status',
+									[
+										'working'=>'working',
+										'done'=>'done'
+									],
+									['class'=> 'form-control',
+									'id'=>'status']
+								);							
+							?>							
+						</div>
+					</div>
+					
                 </div>
+				
+
 
                 <div class="form-group" id="controls">
                     <div class="col-sm-offset-2 col-sm-9">					
@@ -398,6 +424,7 @@
                 </div>
 			<?= $this->Form->end() ?>
         </div>
+		<!--
         <div class="BottomLine"></div>
         <div class="bottom-title">
             <div class="col-sm-9 bottom-left">Conestoga Pizzeria &copy; 2015 / Web Technologies</div>
@@ -415,4 +442,5 @@
                 </ul>
             </div>
         </div>
+		-->
     </div>

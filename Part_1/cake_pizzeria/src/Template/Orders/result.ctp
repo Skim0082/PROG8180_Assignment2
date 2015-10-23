@@ -1,9 +1,9 @@
-    <div id="container">
+    <div id="container" class="bodyblock">
         <div class="darkRedLine"></div>
         <div class="result-title">
             Order Summary
         </div>
-        <img alt="logo" src="/img/pizza02.jpg" />
+        <img alt="logo" src="/pizzeria/img/pizza02.jpg" />
         <div class="under-line"></div>
         <div class="body-home">
             <h2>Thank you for Order!</h2>
@@ -113,6 +113,7 @@
 			</ul>
             <h3 class='h3-total'>Total Price : $ <?=round($totalPrice, 2) ?></h3>
 		</div>
+		<!--
         <div class="BottomLine"></div>
         <div class="bottom-title">
             <div class="col-sm-9 bottom-left">Conestoga Pizzeria &copy; 2015 / Web Technologies</div>
@@ -130,4 +131,5 @@
                 </ul>
             </div>
         </div>
+		-->
     </div>
