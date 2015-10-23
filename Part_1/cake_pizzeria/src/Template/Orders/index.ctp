@@ -1,3 +1,11 @@
+    <div id="container">
+        <div class="darkRedLine"></div>
+        <div class="result-title">
+            Order List 
+        </div>
+        <div class="under-line"></div>
+        <div class=" body-home">
+
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
@@ -6,7 +14,7 @@
 </nav>
 <div class="orders index large-9 medium-8 columns content">
     <h3><?= __('Orders') ?></h3>
-    <table cellpadding="0" cellspacing="0">
+    <table>
         <thead>
             <tr>
                 <th><?= $this->Paginator->sort('id') ?></th>
@@ -47,3 +55,24 @@
         <p><?= $this->Paginator->counter() ?></p>
     </div>
 </div>
+
+
+        </div>
+        <div class="BottomLine"></div>
+        <div class="bottom-title">
+            <div class="col-sm-9 bottom-left">Conestoga Pizzeria &copy; 2015 / Web Technologies</div>
+            <div class="col-sm-3">
+                <ul id="menulist">
+                    <li class="menuitem">
+                        <a href="http://www.conestogac.on.ca/"><img src="/img/facebook.png" alt="Facebook"></a>
+                    </li>
+                    <li class="menuitem">
+                        <a href="http://www.conestogac.on.ca/"><img src="/img/twitter.png" alt="Twitter"></a>
+                    </li>
+                    <li class="menuitem">
+                        <a href="http://www.conestogac.on.ca/"><img src="/img/youtube.png" alt="You Tube"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>			
+	</div>

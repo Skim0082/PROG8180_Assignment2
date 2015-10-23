@@ -1,26 +1,29 @@
     <div id="container">
         <div class="darkRedLine"></div>
-        <div class="top-title">
-            Order Succeed!
+        <div class="result-title">
+            Order Summary
         </div>
         <img alt="logo" src="/img/pizza02.jpg" />
         <div class="under-line"></div>
         <div class="body-home">
             <h2>Thank you for Order!</h2>
             <h3 class='h3-title'>Customer Information</h3>
-            <p class='order-summary'>Name : <?= h($order->name) ?>
-                <br>eMail : <?= h($order->email) ?>
-                <br>Address 1 : <?= h($order->address1) ?>
-                <br>Address 2 : <?= h($order->address2) ?>
-                <br>City : <?= h($order->city) ?>
-                <br>Province : <?= h($order->province) ?>
-                <br>Postal Code : <?= h($order->postalcode) ?>
-                <br>Phone Number : <?= h($order->phonenumber) ?></p>
+			<ul>
+				<li>Name : <?= h($order->name) ?></li>
+				<li>eMail : <?= h($order->email) ?></li>
+				<li>Address 1 : <?= h($order->address1) ?></li>
+				<li>Address 2 : <?= h($order->address2) ?></li>
+				<li>City : <?= h($order->city) ?></li>
+				<li>Province : <?= h($order->province) ?></li>
+				<li>Postal Code : <?= h($order->postalcode) ?></li>
+				<li>Phone Number : <?= h($order->phonenumber) ?></li>
+			</ul>
             <h3 class='h3-title'>Order Information</h3>
-            <p class='order-summary'>Order Number : <?= h($order->id) ?>
-                <br>Selected Pizza : <?= h($order->selectpizza) ?>
-				<br>Pizza Size : <?= h($order->pizzasize) ?>
-                <br>Crust Type : <?= h($order->crusttype) ?>
+            <ul>
+				<li>Order Number : <?= h($order->id) ?></li>
+                <li>Selected Pizza : <?= h($order->selectpizza) ?></li>
+				<li>Pizza Size : <?= h($order->pizzasize) ?></li>
+                <li>Crust Type : <?= h($order->crusttype) ?></li>
 				<?php
 					$toppings = h($order->toppinglist);
 
@@ -96,17 +99,20 @@
 
 					$totalPrice = $subTotal * (1 + $taxRate);					
 				?>
-                <br>Toppings : <?= $temp_string ?> Topping(s) selected
-                <br><?= implode(", ", $ary_topping) ?>
-                <h3 class='h3-title'>Order Price</h3>				
-                <p class='order-summary'>Pizza Size Price : $ <?= $sizePrice ?>
-					<br>Crust cost : $ <?= $crustCost ?>
-                    <br>Topping cost : $ <?= $toppingCost ?>
-                    <br>Sub total : $ <?= $subTotal ?>
-                    <br>Tax Rate(<?= $province ?>) : <?= $taxRate * 100 ?>%
-                    <br>Tax : $ <?= $subTotal * $taxRate ?></p>
-                <h3 class='h3-total'>Total Price : $ <?=round($totalPrice, 2) ?></h3>
-                <br> </div>
+                <li>Toppings : <?= $temp_string ?> Topping(s) selected</li>
+                <li><?= implode(", ", $ary_topping) ?></li>
+			</ul>
+            <h3 class='h3-title'>Order Price</h3>				
+            <ul>
+				<li>Pizza Size Price : $ <?= $sizePrice ?></li>
+				<li>Crust cost : $ <?= $crustCost ?></li>
+				<li>Topping cost : $ <?= $toppingCost ?></li>
+				<li>Sub total : $ <?= $subTotal ?></li>
+				<li>Tax Rate(<?= $province ?>) : <?= $taxRate * 100 ?>%</li>
+				<li>Tax : $ <?= $subTotal * $taxRate ?></li>
+			</ul>
+            <h3 class='h3-total'>Total Price : $ <?=round($totalPrice, 2) ?></h3>
+		</div>
         <div class="BottomLine"></div>
         <div class="bottom-title">
             <div class="col-sm-9 bottom-left">Conestoga Pizzeria &copy; 2015 / Web Technologies</div>

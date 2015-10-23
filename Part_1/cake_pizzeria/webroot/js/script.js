@@ -1,4 +1,6 @@
 function validateForm(){
+	
+
 	//Check that each mandatory box is not empty
 
 	//validate the mandatory name
@@ -87,12 +89,23 @@ function validateForm(){
 		document.forms["myForm"]["phonenumber"].focus();
 		return false;
 	}
+	
+	var chk = [];
+	for(i = 0 ; i< document.forms["myForm"]["toppinglist"].length ; i++)
+	{
+		if(document.forms["myForm"]["toppinglist"][i].checked){
+			chk.push(document.forms["myForm"]["toppinglist"][i].value);
+		}
+	};
+	document.getElementById('chkvalue').value = chk.toString();
+	
+	document.getElementById('orderForm').submit();
     
 	return true;
 }
 
 window.onload = function(){
-    document.getElementById('submit').onclick = function(){
+    document.getElementById('order').onclick = function(){
         validateForm();
     }
 }

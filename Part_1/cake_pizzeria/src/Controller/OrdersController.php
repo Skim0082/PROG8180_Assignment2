@@ -71,11 +71,11 @@ class OrdersController extends AppController
 			//$order = $this->Orders->patchEntity($order, $newData);			
 			
             if ($this->Orders->save($order)) {
-                $this->Flash->success(__('The order has been saved successfully.'));
+                $this->Flash->success(__('Order Completed successfully!'));
 				
                 return $this->redirect(['action' => 'result', $order->id]);
             } else {
-                $this->Flash->error(__('The order could not be saved. Please, try again.'));
+                $this->Flash->error(__('Order could not complete.'));
             }			
         }
         $this->set(compact('order'));
@@ -97,7 +97,7 @@ class OrdersController extends AppController
         if ($this->request->is(['patch', 'post', 'put'])) {
             $order = $this->Orders->patchEntity($order, $this->request->data);
             if ($this->Orders->save($order)) {
-                $this->Flash->success(__('The order has been saved.'));
+                $this->Flash->success(__('Order has been edited.'));
                 return $this->redirect(['action' => 'index']);
             } else {
                 $this->Flash->error(__('The order could not be saved. Please, try again.'));

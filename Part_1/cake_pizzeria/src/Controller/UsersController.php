@@ -17,6 +17,7 @@ class UsersController extends AppController
 	
 	public function login()
 	{
+		$user = $this->Users->newEntity();
 		if ($this->request->is('post')) {
 			$user = $this->Auth->identify();
 			if ($user) {
@@ -25,6 +26,7 @@ class UsersController extends AppController
 			}
 			$this->Flash->error(__('Invalid username or password, try again'));
 		}
+		$this->set('user', $user);
 	}
 
 	public function logout()
