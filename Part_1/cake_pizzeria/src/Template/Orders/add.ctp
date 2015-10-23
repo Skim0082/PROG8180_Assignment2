@@ -11,9 +11,8 @@
 			-->
 			<?= $this->Form->create($order, [
 				'name'=>'myForm',
-				'id'=>'myForm',
-				'class'=>"form-horizontal",
-				'onsubmit'=>'return validateForm()'			
+				'id'=>'orderForm',
+				'class'=>"form-horizontal"
 			]); ?>
                 <div class="col-sm-6">
 
@@ -453,10 +452,10 @@
 						<?php
 							echo $this->Form->button('Order', 
 							[
-								'type'=>'submit', 
+								'type'=>'button', 
 								'class'=>'btn btn-primary',
-								'id'=>'button',
-								'name'=>'submit'							
+								'id'=>'order',
+								'name'=>'order'							
 							]);
 						?>
 						<?php
