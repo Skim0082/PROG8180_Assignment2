@@ -59,6 +59,7 @@ $(document).ready(function(){
     $imageNode.attr('src', "img/white.JPG");	
     $imageNode.attr('alt', "white");
 
+	//show the random 16 images
     for(var i = 0; i < links.length ; i++){        
         var linkNode = links[i];
         var image = new Image();
@@ -124,13 +125,6 @@ $(document).ready(function(){
 			$captionNode.html("Let's Start!");
         }          
     }
-
-//	function swapImage(imageCounter){
-//
-//		var image = imageCache[imageCounter];		
-//		$captionNode.html(image.alt);
-//		$imageNode.attr('src', image.src);		
-//	}
     
     $('#start').on('click',function(e){
         e.preventDefault();
