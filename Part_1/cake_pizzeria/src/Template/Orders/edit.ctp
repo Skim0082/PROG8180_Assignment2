@@ -396,7 +396,7 @@
 									'status',
 									[
 										'working'=>'working',
-										'done'=>'done'
+										'complete'=>'complete'
 									],
 									['class'=> 'form-control',
 									'id'=>'status']

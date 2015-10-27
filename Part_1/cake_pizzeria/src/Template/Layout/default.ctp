@@ -44,7 +44,7 @@ $cakeDescription = 'Assignment 1 - Conestoga Pizzeria';
     <footer>
         <div class="BottomLine"></div>
         <div class="bottom-title">
-            <div class="col-sm-9 bottom-left">Conestoga Pizzeria &copy; 2015 / Web Technologies</div>
+            <div class="col-sm-9 bottom-left">Pizzeria &copy; 2015 / Web Technologies - SungJoe KIM</div>
             <div class="col-sm-3">
                 <ul id="menulist">
                     <li class="menuitem">
