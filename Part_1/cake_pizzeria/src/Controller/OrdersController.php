@@ -57,18 +57,9 @@ class OrdersController extends AppController
         $order = $this->Orders->newEntity();
         if ($this->request->is('post')) {
             $order = $this->Orders->patchEntity($order, $this->request->data);		
-			
-			/* Just for test
-			print $order['phonenumber'];
-			if(!empty($order['toppinglist'])){
-				print $order['toppinglist'];
-			}
-			*/			
+					
 			// Added this line for Authorizaton
-			$order->user_id = $this->Auth->user('id');
-			// You could also do the following
-			//$newData = ['user_id' => $this->Auth->user('id')];
-			//$order = $this->Orders->patchEntity($order, $newData);			
+			$order->user_id = $this->Auth->user('id');			
 			
             if ($this->Orders->save($order)) {
                 $this->Flash->success(__('Order Completed successfully!'));

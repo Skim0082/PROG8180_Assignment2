@@ -120,23 +120,5 @@
 			</ul>
             <h3 class='h3-total'>Total Price : $ <?=round($totalPrice, 2) ?></h3>
 		</div>
-		<!--
-        <div class="BottomLine"></div>
-        <div class="bottom-title">
-            <div class="col-sm-9 bottom-left">Conestoga Pizzeria &copy; 2015 / Web Technologies</div>
-            <div class="col-sm-3">
-                <ul id="menulist">
-                    <li class="menuitem">
-                        <a href="http://www.conestogac.on.ca/"><img src="/img/facebook.png" alt="Facebook"></a>
-                    </li>
-                    <li class="menuitem">
-                        <a href="http://www.conestogac.on.ca/"><img src="/img/twitter.png" alt="Twitter"></a>
-                    </li>
-                    <li class="menuitem">
-                        <a href="http://www.conestogac.on.ca/"><img src="/img/youtube.png" alt="You Tube"></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-		-->
+
     </div>

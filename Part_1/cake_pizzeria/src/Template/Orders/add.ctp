@@ -8,12 +8,9 @@
         <div class=" body-home">
 		
 			<ul class="horizontal">
-				<li><?= $this->Html->link('Log In', ['controller' => 'Users', 'action' => 'login']) ?></li>	
-				<li> </li>
+				<li><?= $this->Html->link('Order List', ['controller' => 'Orders', 'action' => 'index']) ?></li>
 			</ul>		
-            <!--
-			<form class="form-horizontal" id="myForm" name="myForm" onsubmit="return validateForm()" action="submit.php" method="post">
-			-->
+
 			<?= $this->Form->create($order, [
 				'name'=>'myForm',
 				'id'=>'orderForm',
@@ -26,11 +23,7 @@
                     <div id="inputs">
                         <div class="form-group">
                             <label for="name" class="col-sm-3 control-label">name</label>
-                            <!--
-							<div class="col-sm-9">					
-                                <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
-                            </div>
-							-->
+
 							<?php 
 								echo $this->Form->input('name',[
 									'templates'=>[
@@ -46,11 +39,7 @@
 
                         <div class="form-group">
                             <label for="email" class="col-sm-3 control-label">email</label>
-							<!--
-                            <div class="col-sm-9">
-                                <input type="text" class="form-control" id="email" name="email" placeholder="Enter your email">
-                            </div>
-							-->
+
 							<?php 
 								echo $this->Form->input('email',[
 									'templates'=>[
@@ -66,11 +55,7 @@
 
                         <div class="form-group">
                             <label for="address1" class="col-sm-3 control-label">Address 1</label>
-                            <!--
-							<div class="col-sm-9">
-                                <input type="text" class="form-control" id="address1" name="address1" placeholder="Address 1">
-                            </div>
-							-->
+
 							<?php 
 								echo $this->Form->input('address1',[
 									'templates'=>[
@@ -86,11 +71,7 @@
 
                         <div class="form-group">
                             <label for="address2" class="col-sm-3 control-label">Address 2</label>
-							<!--
-                            <div class="col-sm-9">
-                                <input type="text" class="form-control" id="address2" name="address2" placeholder="Address 2">
-                            </div>
-							-->
+
 							<?php 
 								echo $this->Form->input('address2',[
 									'templates'=>[
@@ -106,11 +87,7 @@
 
                         <div class="form-group">
                             <label for="city" class="col-sm-3 control-label">City</label>
-                            <!--
-							<div class="col-sm-9">
-                                <input type="text" class="form-control" id="city" name="city" placeholder="City">
-                            </div>
-							-->
+
 							<?php 
 								echo $this->Form->input('city',[
 									'templates'=>[
@@ -127,14 +104,7 @@
                         <div class="form-group">
                             <label for="province" class="col-sm-3 control-label">Province</label>
                             <div class="col-sm-9">
-								<!--
-                                <select id="province" name="province" class="form-control">
-                                    <option>Ontario</option>
-                                    <option>Quebec</option>
-                                    <option>Manitoba</option>
-                                    <option>Saskatchewan</option>
-                                </select>
-								-->
+
 								<?php
 									echo $this->Form->select(
 										'province',
@@ -153,11 +123,7 @@
 
                         <div class="form-group">
                             <label for="postalcode" class="col-sm-3 control-label">Postal Code</label>
-                            <!--
-							<div class="col-sm-9">
-                                <input type="text" class="form-control" id="postalcode" name="postalcode" placeholder="Postal Code">
-                            </div>
-							-->
+
 							<?php 
 								echo $this->Form->input('postalcode',[
 									'templates'=>[
@@ -173,11 +139,7 @@
 
                         <div class="form-group">
                             <label for="phonenumber" class="col-sm-3 control-label">Phone number</label>
-                            <!--
-							<div class="col-sm-9">
-                                <input type="text" class="form-control" id="phonenumber" name="phonenumber" placeholder="Phone number">
-                            </div>
-							-->
+
 							<?php 
 								echo $this->Form->input('phonenumber',[
 									'templates'=>[
@@ -198,17 +160,7 @@
                     <div class="form-group">
                         <label for="selectpizza" class="col-sm-3 control-label">Select Pizza</label>
                         <div class="col-sm-9">
-                            <!--<select id="selectpizza" name="selectpizza" class="form-control">
-                                <option>Sunny Side Up Pizza</option>
-                                <option>BBQ Chicken Pizza</option>
-                                <option>Muffuetta Pizza</option>
-                                <option>Margherita Pizza</option>
-                                <option>Caramelized Onion Pizza</option>
-                                <option>Cheese Calzone</option>
-                                <option>Grilled Pizza</option>
-                                <option>Broccoli Deep Dish Pizza</option>
-                                <option>Seafood Pizza</option>
-                            </select>-->
+
 							<?php
 								echo $this->Form->select(
 									'selectpizza',
@@ -233,14 +185,7 @@
                     <div class="form-group">
                         <label for="pizzasize" class="col-sm-3 control-label">Pizza Size</label>
                         <div class="col-sm-9">
-							<!--
-                            <select id="pizzasize" name="pizzasize" class="form-control">
-                                <option>X-Large</option>
-                                <option>Large</option>
-                                <option>Medium</option>
-                                <option>Small</option>
-                            </select>
-							-->
+
 							<?php
 								echo $this->Form->select(
 									'pizzasize',
@@ -259,20 +204,7 @@
 
                     <div class="form-group">
                         <label class="col-sm-3 control-label">Crust type</label>						
-                        <!--<div class="col-sm-9">
-                            <label class="radio-inline">
-                                <input type="radio" name="crusttype" id="crusttype1" value="Hand-tossed" checked> Hand-tossed
-                            </label>
-                            <label class="radio-inline">
-                                <input type="radio" name="crusttype" id="crusttype2" value="Pan"> Pan
-                            </label>
-                            <label class="radio-inline">
-                                <input type="radio" name="crusttype" id="crusttype3" value="Stuffed"> Stuffed
-                            </label>
-                            <label class="radio-inline">
-                                <input type="radio" name="crusttype" id="crusttype4" value="Thin"> Thin
-                            </label>
-                        </div>-->
+
 						<div class="col-sm-9">
 						<?php
 							echo $this->Form->radio(
@@ -295,24 +227,7 @@
                     <div class="form-group">
                         <label class="col-sm-3 control-label">Toppings</label>
                         <div class="radio-inline col-sm-9">
-							<!--
-                            <input type="checkbox" id="inlineCheckbox1" name="toppinglist" value="Veggies"> Veggies
-                            <input type="checkbox" id="inlineCheckbox2" name="toppinglist" value="Roma Tomatoes"> Roma Tomatoes
-                            <input type="checkbox" id="inlineCheckbox3" name="toppinglist" value="Red Onions"> Red Onions
-                            <input type="checkbox" id="inlineCheckbox4" name="toppinglist" value="Spinach"> Spinach
-                            <input type="checkbox" id="inlineCheckbox5" name="toppinglist" value="Pineapple"> Pineapple
-                            <input type="checkbox" id="inlineCheckbox6" name="toppinglist" value="Brocooli"> Brocooli
-                            <input type="checkbox" id="inlineCheckbox7" name="toppinglist" value="Meats"> Meats
-                            <input type="checkbox" id="inlineCheckbox8" name="toppinglist" value="Anchovies"> Anchovies
-                            <input type="checkbox" id="inlineCheckbox9" name="toppinglist" value="Bacon Crumble"> Bacon Crumble
-                            <input type="checkbox" id="inlineCheckbox10" name="toppinglist" value="Chicken"> Chicken
-                            <input type="checkbox" id="inlineCheckbox11" name="toppinglist" value="Feta Cheese"> Feta Cheese
-                            <input type="checkbox" id="inlineCheckbox12" name="toppinglist" value="Mozzarella"> Mozzarella
-                            <input type="checkbox" id="inlineCheckbox13" name="toppinglist" value="Hot Sauce"> Hot Sauce
-                            <input type="checkbox" id="inlineCheckbox14" name="toppinglist" value="BBQ Sauce"> BBQ Sauce
-                            <input type="checkbox" id="inlineCheckbox15" name="toppinglist" value="Tomato Sauce"> Tomato Sauce
-                            <input type="checkbox" id="inlineCheckbox16" name="toppinglist" value="Chill Sauce"> Chill Sauce
-							-->					
+				
 						<?php
 							echo $this->Form->checkbox('toppinglist', [
 								'hiddenField' => false,
@@ -450,10 +365,7 @@
 
                 <div class="form-group" id="controls">
                     <div class="col-sm-offset-2 col-sm-9">
-                        <!--
-						<input type="submit" id="button" name="submit" class="btn btn-primary" value="Order">
-                        <input type="reset" id="reset" class="btn btn-info" value="Reset">
-						-->						
+					
 						<?php
 							echo $this->Form->button('Order', 
 							[
@@ -474,25 +386,7 @@
                     </div>
                 </div>
 			<?= $this->Form->end() ?>
-            <!--</form>-->
+
         </div>
-		<!--
-        <div class="BottomLine"></div>
-        <div class="bottom-title">
-            <div class="col-sm-9 bottom-left">Conestoga Pizzeria &copy; 2015 / Web Technologies</div>
-            <div class="col-sm-3">
-                <ul id="menulist">
-                    <li class="menuitem">
-                        <a href="http://www.conestogac.on.ca/"><img src="/img/facebook.png" alt="Facebook"></a>
-                    </li>
-                    <li class="menuitem">
-                        <a href="http://www.conestogac.on.ca/"><img src="/img/twitter.png" alt="Twitter"></a>
-                    </li>
-                    <li class="menuitem">
-                        <a href="http://www.conestogac.on.ca/"><img src="/img/youtube.png" alt="You Tube"></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-		-->
+
     </div>
