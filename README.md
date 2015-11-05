@@ -17,7 +17,7 @@ Development Environment: using WAMP Server
 Pizzeria Web Url 
   - Order page : http://localhost/pizzeria/orders/add
   - Login Page : http://localhost/pizzeria/users/login
-    - access as admin : user name / password --> admin / admin
+    - login access as admin : user name / password --> admin / admin
   - Order list : http://localhost/pizzeria/orders/index  
 
 Park 2
