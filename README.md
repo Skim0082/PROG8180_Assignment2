@@ -16,11 +16,14 @@ Development Environment: using WAMP Server
   - I did not allow customer sign out, only employees as admin can access to Order List after Login.
     - Because my concept and understand about the requirements is as below;
     - Customer can only make an order with order page and ask for employee when customer wnat to change order infomation
+  - I did not implement to validate specific details such as the wrong url address.
 
 Pizzeria Web Url 
   - Order page : http://localhost/pizzeria/orders/add
   - Login Page : http://localhost/pizzeria/users/login
     - login access as admin : user name / password --> admin / admin
+    - if users table has no data of admin, can add the add page as below;
+    - http://localhost/pizzeria/users/add
   - Order list : http://localhost/pizzeria/orders/index  
 
 Park 2
