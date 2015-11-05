@@ -1,6 +1,8 @@
 # PROG8180_Assignment2
 Web Technologies - Assignment 2
 
+I have tested using Google Chrome Browser, Please review with Chrome Browser.
+
 Part 1
 
 Development Environment: using WAMP Server
@@ -24,6 +26,7 @@ Pizzeria Web Url
 Park 2
 
 Folder Structure of web pages:
+
   - Part 2
     - css/w3.css
     - img/card images
