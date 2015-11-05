@@ -26,7 +26,8 @@ Pizzeria Web Url
 Park 2
 
 I implemented responsive web and 4 x 4 matrix. 
-Folder Structure of web pages:
+
+Folder Structure of web pages is as below:
   - Part 2
     - css/w3.css
     - img/card images
