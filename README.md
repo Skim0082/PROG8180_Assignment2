@@ -10,6 +10,7 @@ Development Environment: using WAMP Server
     - Configuration for connection of database was already set in app.php in config folder of CakePHP 
     - Database and table schema are located in the the folder of 'config/schema' in CakePHP structure
       - Schema files name : pizzeria_DB.sql, orders_Table.sql, users_Table.sql
+        - pizzeria_DB.sql file includes creating Database, Tables, and insert data already exist
   - I did not allow customer sign out, only employees as admin can access to Order List after Login.
     - Because my concept and understand about the requirements is as below;
     - Customer can only make an order with order page and ask for employee when customer wnat to change order infomation
