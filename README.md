@@ -24,9 +24,8 @@ Pizzeria Web Url
   - Order list : http://localhost/pizzeria/orders/index  
 
 Park 2
-
+I implemented responsive web and 4 x 4 matrix. 
 Folder Structure of web pages:
-
   - Part 2
     - css/w3.css
     - img/card images
