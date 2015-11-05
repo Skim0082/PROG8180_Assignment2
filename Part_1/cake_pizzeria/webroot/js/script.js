@@ -1,7 +1,4 @@
-function validateForm(){
-	
-
-	//Check that each mandatory box is not empty
+function validateForm(){	
 
 	//validate the mandatory name
 	var x = document.forms["myForm"]["name"].value

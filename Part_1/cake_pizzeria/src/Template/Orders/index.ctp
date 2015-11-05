@@ -5,7 +5,6 @@
         </div>
         <div class="under-line"></div>
         <div class=" body-home">
-
 			
 				<ul class="horizontal">
 					
@@ -56,7 +55,6 @@
 					</ul>
 					<p><?= $this->Paginator->counter() ?></p>
 				</div>
-
 
         </div>
 			
