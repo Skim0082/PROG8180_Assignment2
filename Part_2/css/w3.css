@@ -15,7 +15,7 @@ html {
 }
 
 body {
-    margin: 0
+    margin: 0 auto;
 }
 
 article,
@@ -790,7 +790,7 @@ ul.w3-ul li:last-child {
 .w3-twothird,
 .w3-quarter {
     float: left;
-    width: 100%
+    width: 100%;
 }
 
 .w3-col.s1 {
@@ -1305,7 +1305,13 @@ ul.w3-ul li:last-child {
 }
 
 .w3-container {
-    padding: 1px 16px
+    padding: 1px 16px;
+}
+
+.self-body {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .w3-example {
