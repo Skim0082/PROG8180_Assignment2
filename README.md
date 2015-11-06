@@ -1,9 +1,9 @@
 # PROG8180_Assignment2
-Web Technologies - Assignment 2
+##Web Technologies - Assignment 2
 
 I have tested using Google Chrome Browser, Please review with Chrome Browser.
 
-Part 1
+##Part 1
 
 Development Environment: using WAMP Server
   - Database name : pizzeria
@@ -27,7 +27,7 @@ Pizzeria Web Url
   - Order list : http://localhost/pizzeria/orders/index 
     - Order list can be shown after login as admin/admin
 
-Park 2
+##Park 2
 
 I implemented responsive web and 4 x 4 matrix, using JQuery, and adapted to responsive web with W3.CSS. 
 
