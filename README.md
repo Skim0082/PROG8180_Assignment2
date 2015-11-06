@@ -27,7 +27,7 @@ Pizzeria Web Url
   - Order list : http://localhost/pizzeria/orders/index 
     - Order list can be shown after login as admin/admin
 
-##Park 2
+##Part 2
 
 I implemented responsive web and 4 x 4 matrix, using JQuery, and adapted to responsive web with W3.CSS. 
 
