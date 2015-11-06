@@ -37,4 +37,5 @@ I implemented responsive web and 4 x 4 matrix, using JQuery, and adapted to resp
     - css/w3.css
     - img/card images
     - js/script.js
-    - index.html ```
+    - index.html
+```
