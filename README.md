@@ -21,13 +21,15 @@ Pizzeria Web Url
   - Order page : http://localhost/pizzeria/orders/add
   - Login Page : http://localhost/pizzeria/users/login
     - login access as admin : user name / password --> admin / admin
-    - if users table has no data of admin, can add the add page as below;
-    - http://localhost/pizzeria/users/add
-  - Order list : http://localhost/pizzeria/orders/index  
+      - above pizzeria_DB.sql includes admin data in users table
+      - if users table has no data of admin, can add the add page as below;
+      - http://localhost/pizzeria/users/add
+  - Order list : http://localhost/pizzeria/orders/index 
+    - Order list can be shown after login as admin/admin
 
 Park 2
 
-I implemented responsive web and 4 x 4 matrix. 
+I implemented responsive web and 4 x 4 matrix, using JQuery, and adapted to responsive web with W3.CSS. 
 
 Folder Structure of web pages is as below:
   - Part 2
