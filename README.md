@@ -1,4 +1,4 @@
-# PROG8180 Web Technologies - Assignment 2
+## PROG8180 Web Technologies - Assignment 2
 
 I have tested using Google Chrome Browser, Please review with Chrome Browser.
 
@@ -30,7 +30,7 @@ I have tested using Google Chrome Browser, Please review with Chrome Browser.
 
 I implemented responsive web and 4 x 4 matrix, using JQuery, and adapted to responsive web with W3.CSS. 
 
-###Folder Structure of web pages is as below:
+####Folder Structure of web pages is as below:
 ```
   - Part 2
     - css/w3.css
