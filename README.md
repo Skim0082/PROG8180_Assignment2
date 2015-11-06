@@ -20,7 +20,7 @@ I have tested using Google Chrome Browser, Please review with Chrome Browser.
 ###Pizzeria Web Url 
   - **Order page** : ```http://localhost/pizzeria/orders/add```
   - **Login Page** : ```http://localhost/pizzeria/users/login```
-    - login access as admin : user name / password --> admin / admin
+    - **login access as admin* : user name / password --> **admin / admin**
       - above pizzeria_DB.sql includes admin data in users table
       - if users table has no data of admin, can add the add page as below;
         - http://localhost/pizzeria/users/add
