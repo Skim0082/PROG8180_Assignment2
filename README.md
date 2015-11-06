@@ -4,7 +4,7 @@ I have tested using Google Chrome Browser, Please review with Chrome Browser.
 
 ##Part 1
 
-  - **Development Environment** : [WAMP Server]
+  - **Development Environment** : WAMP Server
   - **Database name** : pizzeria
   - **Table names** : orders, users
   - **Database access user**  : user : **root**  / password : **root**
