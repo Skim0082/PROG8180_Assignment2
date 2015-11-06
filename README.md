@@ -1,6 +1,6 @@
 ## PROG8180 Web Technologies - Assignment 2
 
-I have tested using Google Chrome Browser, Please review with Chrome Browser.
+I have tested using **Google Chrome Browser**, Please review with Chrome Browser.
 
 ##Part 1
 
