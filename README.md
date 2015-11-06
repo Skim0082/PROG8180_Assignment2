@@ -6,8 +6,8 @@ I have tested using Google Chrome Browser, Please review with Chrome Browser.
 ##Part 1
 
 Development Environment: using WAMP Server
-  - Database name : [**pizzeria**]
-  - Table names : orders, users
+  - Database name : **pizzeria**
+  - Table names : **orders**, users
   - Database access user  : user : root  / password : root
     - Configuration for connection of database was already set in app.php in config folder of CakePHP 
     - Database and table schema are located in the the folder of 'config/schema' in CakePHP structure
