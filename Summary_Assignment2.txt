@@ -26,7 +26,7 @@ Pizzeria Web Url
     - login access as admin : user name / password --> admin / admin
   - Order list : http://localhost/pizzeria/orders/index  
 
-Park 2
+Part 2
 
 Folder Structure of web pages:
   - Part 2
