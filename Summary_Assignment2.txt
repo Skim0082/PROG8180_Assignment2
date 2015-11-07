@@ -5,7 +5,10 @@ GitHub address is as below: this repository has Part1 and Part 2 folder
 
 https://github.com/Skim0082/PROG8180_Assignment2.git
 
-Currently, this repository is private but I will switch public after due day on Nov. 7th.
+Currently, this repository is private but I will switch public after due day on Nov. 10th.
+
+I have tested using Google Chrome Browser, Please review my works with Chrome Browser.
+I linked to Bootstrap and JQuery in the my web page, so please review my works under the internet connected environment.
 
 Part 1
 
