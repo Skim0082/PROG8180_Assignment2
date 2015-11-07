@@ -1,7 +1,7 @@
 ## PROG8180 Web Technologies - Assignment 2
 
-I have tested using **Google Chrome Browser**, Please review my works with Chrome Browser.
-I linked to Bootstrap and JQuery in the my web page, so please review my works under the internet connected environment.
+- I have tested using **Google Chrome Browser**, Please review my works with Chrome Browser.
+- I linked to Bootstrap and JQuery in the my web page, so please review my works under the internet connected environment.
 
 ##Part 1
 
