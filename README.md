@@ -22,7 +22,7 @@ I have tested using **Google Chrome Browser**, Please review with Chrome Browser
     - **login access as admin** : user name / password --> **admin** / **admin**
       - above pizzeria_DB.sql includes admin data in users table
       - if users table has no data of admin, can add the add page as below;
-        - http://localhost/pizzeria/users/add/
+        - http://localhost/pizzeria/users/add
   - **Order list** : ```http://localhost/pizzeria/orders/index```
     - Order list can be shown after login as admin/admin
 
