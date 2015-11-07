@@ -32,12 +32,12 @@ I implemented responsive web and 4 x 4 matrix, using JQuery, and adapted to resp
 
 ####Folder Structure of web pages is as below:
 ```
-  |- Part 2
-  |-- css
-  |    `--w3.css
-  |-- img
-  |    `--list01.jpg ~ list16.jpg
-  |-- js
-  |    `--script.js
-  `-- index.html
+  Part 2
+   |-- css
+   |    `--w3.css
+   |-- img
+   |    `--list01.jpg ~ list16.jpg
+   |-- js
+   |    `--script.js
+   `-- index.html
 ```
