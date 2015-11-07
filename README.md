@@ -17,13 +17,13 @@ I have tested using **Google Chrome Browser**, Please review with Chrome Browser
   - I did not implement to validate specific details such as the wrong url address.
 
 ####Pizzeria Web Url 
-  - **Order page** : ```http://localhost/pizzeria/orders/add```
-  - **Login Page** : ```http://localhost/pizzeria/users/login```
+  - **Order page** : ```http://localhost/pizzeria/orders/add/```
+  - **Login Page** : ```http://localhost/pizzeria/users/login/```
     - **login access as admin** : user name / password --> **admin** / **admin**
       - above pizzeria_DB.sql includes admin data in users table
       - if users table has no data of admin, can add the add page as below;
-        - http://localhost/pizzeria/users/add
-  - **Order list** : ```http://localhost/pizzeria/orders/index```
+        - http://localhost/pizzeria/users/add/
+  - **Order list** : ```http://localhost/pizzeria/orders/index/```
     - Order list can be shown after login as admin/admin
 
 ##Part 2
