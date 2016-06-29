@@ -4,7 +4,6 @@
 -	CakePHP v 3.1.2 (MVC Framework)
 -	Apache Server, MySQL (Wamp Server)
 -	JavaScript, JQuery, HTML5, CSS3, BootStrap
--	GitHub
 
 ##Part 2
 
